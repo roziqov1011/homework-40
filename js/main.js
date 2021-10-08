@@ -28,7 +28,7 @@ elMovies.innerHTML = "";
 var createMoviesElement = function (kino){
     var elNewMovie = elTemplate.cloneNode(true);
 
-    // elNewMovie.querySelector(".movies__img").src ="https://www.youtube.com/embed/"+kino.youtubeId;
+    elNewMovie.querySelector(".movies__img").src ="https://www.youtube.com/embed/"+kino.youtubeId;
     elNewMovie.querySelector(".movies__title").textContent = kino.title;
     elNewMovie.querySelector(".movies__categories").textContent = kino.categories;
     elNewMovie.querySelector(".movies__id").href ="https://www.youtube.com/watch?v="+ kino.youtubeId;
